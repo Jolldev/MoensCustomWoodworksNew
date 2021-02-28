@@ -45,6 +45,10 @@ body {
   hyphens: auto;
 }
 
+.container-fluid {
+  padding: 5% 3%;
+  
+}
 
 /* Buttons */
 
@@ -194,10 +198,8 @@ box-shadow: none;
 }
 
 
-/* My work page */
-.container-fluid {
-  padding: 0 5% 8%;
-}
+/* Projects page */
+
 
 /* My-work video */
 /* .timelapse {
@@ -215,12 +217,12 @@ box-shadow: none;
   height: 100%;
 } */
 
-/* My work photos */
-.cell {
-  padding: 6%;
+/*Projects photos */
+.projects-cell {
+  padding: 7% 3%;
 }
 
-.work-img {
+.projects-img {
   border-radius: 15px;
   box-shadow: 0 0 5px 1px;
   margin: 0;
@@ -229,9 +231,13 @@ box-shadow: none;
 }
 
 /* Process page */
+.process-cell{
+  width: 100%;
+}
+
 .process-img{
   border-radius: 15px;
-  margin: 12% auto 3%;
+  /* margin: 12% auto 3%; */
   object-fit: contain;
   width: 100%;
 }
@@ -241,8 +247,14 @@ font-size: 1.5rem;
   text-align: center;
 }
 
-.process-cell .text-main, .process-cell .process-label, #my-work .text-main{
+.process-cell .text-main, .process-cell .process-label, #projects .text-main{
   color: white;
+}
+
+@media (min-width:576px){
+.projects-cell {
+  padding: 3%;
+}
 }
 
 @media (min-width:768px){
@@ -267,7 +279,7 @@ font-size: 1.5rem;
   display: block;
 }
 
-/* my work page */
+/* Projects page */
 .cell {
   padding: 3%;
 }
@@ -283,4 +295,8 @@ font-size: 1.5rem;
 .text-main{
   font-size: 1.2rem;
 }
+
+.container-fluid {
+  padding: 5%;
+  }
 }
