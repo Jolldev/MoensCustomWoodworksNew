@@ -60,6 +60,7 @@ body {
 }
 
 .container-fluid {
+  margin: 0;
   padding: 10% 3%;
   
 }
