@@ -63,7 +63,7 @@ function matchSlideOne(){
     var slideOneHeight = slideOne.height;
     console.log(slideOne.style.width);
     $('.carousel-img').each(function () {
-        this.width = '100%';
+        // this.width = '100%';
         this.height = slideOneHeight;
     });
 
