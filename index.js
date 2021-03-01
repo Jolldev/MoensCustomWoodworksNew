@@ -56,15 +56,16 @@
 
 function matchSlideOne(){
     $('.carousel').carousel(0); //resets carousel to first (tallest) slide
-    var slideOne= document.querySelector('.carousel-img');
-    
-    slideOne.style.width='100%';
-    slideOne.style.height = 'auto';
-    var slideOneHeight = slideOne.height;
-    console.log(slideOne.style.width);
+    var slideOne= document.querySelector('.slide-one');
+    $(slideOne).css('height', '0');
+    $(slideOne).css('width', '100%');
+    $(slideOne).css('height', 'auto');
+    var slideOneHeight = slideOne.offsetHeight;
+    console.log(slideOneHeight);
     $('.carousel-img').each(function () {
-        // this.width = '100%';
-        this.height = slideOneHeight;
+        // this.style.height = slideOneHeight;
+
+        $('.carousel-img').css('height', slideOneHeight);
     });
 
 
