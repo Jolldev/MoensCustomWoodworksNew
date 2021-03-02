@@ -54,18 +54,17 @@
 // }
 
 
-function matchSlideOne(){
-    $('.carousel').carousel(0); //resets carousel to first (tallest) slide
-    var slideOne= document.querySelector('.slide-one');
-    $(slideOne).css('height', '0');
+// Makes all carousel slides match the box/logo slide (slide 1)
+function matchSlideOne() {
+    $('.carousel').carousel(0); //resets carousel to first slide
+    var slideOne = $('.slide-one');
+    // $(slideOne).css('height', '0');
     $(slideOne).css('width', '100%');
     $(slideOne).css('height', 'auto');
-    var slideOneHeight = slideOne.offsetHeight;
+    var slideOneHeight = slideOne.height();
     console.log(slideOneHeight);
     $('.carousel-img').each(function () {
-        // this.style.height = slideOneHeight;
-
-        $('.carousel-img').css('height', slideOneHeight);
+         $('.carousel-img').height(slideOneHeight);
     });
 
 
@@ -96,4 +95,3 @@ function windowSize() {
 window.addEventListener('resize', windowSize);
 window.addEventListener("orientationchange", windowSize);
 document.addEventListener("DOMContentLoaded", windowSize);
-

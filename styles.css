@@ -10,11 +10,11 @@ body {
 }
 
 .light-bg {
-  background-color: #E3C594;
+  background-color: #c9ae87;
 }
 
 .medium-bg {
-  background-color: rgb(110, 82, 58, 1);
+  background-color: rgb(110, 82, 58, .6);
 }
 
 .wood-bg {
@@ -47,6 +47,7 @@ body {
 
 .reg-img{
   border-radius: 15px;
+  box-shadow: 3px 3px 20px .5px black;
   object-fit: contain;
   width: 100%;
 }
@@ -93,7 +94,8 @@ nav a{
 
 .nav-link{
   font-size: 1rem;
-  width: fit-content;
+  margin-right: 3%;
+  text-align: right;
 }
 
 .nav-link:hover{
@@ -228,6 +230,10 @@ box-shadow: none;
   text-align: center;
 }
 
+.modal-header, .modal-body, .modal-footer{
+  background-color: black;
+}
+
 /* About me page */
 .img-out-box{
   display: none;
@@ -242,7 +248,7 @@ box-shadow: none;
 .text-box {
   align-items: center;
   border-radius: 20px;
-  box-shadow: 5px 5px 10px 2px;
+  box-shadow: 3px 3px 20px .5px;
   color: black;
   display: flex;
   flex-direction: column;
