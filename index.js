@@ -49,9 +49,9 @@
  * Wait until all the assets have been loaded so a maximum height 
  * can be calculated correctly.
  */
-// window.onload = function () {
-//     carouselNormalization();
-// }
+window.onload = function () {
+    carouselNormalization();
+}
 
 
 // Makes all carousel slides match the box/logo slide (slide 1)
@@ -91,7 +91,9 @@ function windowSize() {
     }
 }
 
-
+window.onload = function () {
+    windowSize();
+}
 window.addEventListener('resize', windowSize);
 window.addEventListener("orientationchange", windowSize);
 document.addEventListener("DOMContentLoaded", windowSize);
