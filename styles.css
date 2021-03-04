@@ -75,12 +75,21 @@ button, .btn-cust, input[type="submit"], input[type="reset"] {
   box-shadow: 2px 2px 5px 1px black;
   background-image: url("images/button.jpg");
   background-size: 100%;
+  color: rgb(26, 26, 26);
   font-family: var(--serif);
   font-size: 1.1rem;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: .6px;
   padding: 10px;
   margin: 10px auto;
   text-align: center;
+}
+
+.btn-cust:hover{
+  box-shadow: 2px 2px 1px 1px black;
+  transform: scale(.98);
+  transition: .3s;
+
 }
 
 nav a{
@@ -99,6 +108,7 @@ nav a{
 }
 
 .nav-link:hover{
+  color: rgb(226, 109, 31) !important;
   transform: scale(1.1);
   transition: .5s;
 }
@@ -186,7 +196,7 @@ box-shadow: none;
 /* footer */
 #footer {
   height: 80px;
-  position: relative;
+  padding-top: 10px;
   text-align: center;
   width: 100%;
 }
@@ -218,6 +228,7 @@ box-shadow: none;
 } */
 
 /*Projects and Gift shop pages*/
+
 .projects-cell {
   padding: 7% 3%;
 }
@@ -231,7 +242,8 @@ box-shadow: none;
 }
 
 .modal-header, .modal-body, .modal-footer{
-  background-color: black;
+  background-image: url(images/wood-grain.jpg);
+  background-size: 100%;
 }
 
 /* About me page */
