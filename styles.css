@@ -79,7 +79,6 @@ button, .btn-cust, input[type="submit"], input[type="reset"] {
   font-family: var(--serif);
   font-size: 1.1rem;
   font-weight: 600;
-  letter-spacing: .6px;
   padding: 10px;
   margin: 10px auto;
   text-align: center;
