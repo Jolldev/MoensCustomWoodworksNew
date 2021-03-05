@@ -1,12 +1,11 @@
 :root{
-  --serif: 'Playfair Display', serif;
+  --serif: 'PT Serif', serif;
   --sans-serif: 'Josefin Sans', sans-serif;
 }
 
 body {
   background-color: rgb(24, 24, 24);
   width: 100%;
-  font-family: var(--sans-serif);
 }
 
 .light-bg {
@@ -68,17 +67,18 @@ body {
 
 /* Buttons */
 
-button, .btn-cust, input[type="submit"], input[type="reset"] {
+button, .btn-cust, input[type="submit"], input[type="reset"], .modal button, .navbar-toggler {
   border: none;
   padding: 0;
+  /* background-color: #aa754c; */
   border-radius: 10px;
   box-shadow: 2px 2px 5px 1px black;
   background-image: url("images/button.jpg");
   background-size: 100%;
-  color: rgb(26, 26, 26);
+  color: rgb(0, 0, 0);
   font-family: var(--serif);
   font-size: 1.1rem;
-  font-weight: 600;
+  font-weight: 500;
   padding: 10px;
   margin: 10px auto;
   text-align: center;
@@ -93,6 +93,7 @@ button, .btn-cust, input[type="submit"], input[type="reset"] {
 
 nav a{
   color: white !important;
+  font-family: var(--sans-serif);
 }
 
 .navbar-brand{
@@ -142,6 +143,7 @@ nav a{
 
 .process-label{
   color: white;
+  font-family: var(--sans-serif);
 font-size: 1.5rem;
   text-align: center;
 }
@@ -230,6 +232,10 @@ box-shadow: none;
 
 .projects-cell {
   padding: 7% 3%;
+}
+
+#projects .reg-img, #gift-shop .reg-img{
+  cursor: pointer;
 }
 
 .gift-shop-caption{
