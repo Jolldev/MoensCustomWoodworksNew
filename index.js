@@ -1,14 +1,4 @@
 
-
-/**
- * Wait until all the assets have been loaded so a maximum height 
- * can be calculated correctly.
- */
-window.onload = function () {
-    carouselNormalization();
-}
-
-
 // Makes all carousel slides match the box/logo slide (slide 1)
 function matchSlideOne() {
     $('.carousel').carousel(0); //resets carousel to first slide
