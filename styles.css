@@ -1,5 +1,5 @@
 :root{
-  --serif: 'PT Serif', serif;
+  --serif: 'Crimson Text', serif;
   --sans-serif: 'Josefin Sans', sans-serif;
 }
 
@@ -35,8 +35,8 @@ body {
 .text-main{
   color: white;
   font-family: var(--serif);
-  font-size: 1.1rem;
-  line-height: 1.3;
+  font-size: 1.3rem;
+  line-height: 1.2;
 }
 
 .page-headings{
@@ -79,7 +79,7 @@ button, .btn-cust, input[type="submit"], input[type="reset"], .modal button, .na
   background-size: 100%;
   color: rgb(0, 0, 0);
   font-family: var(--serif);
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
   padding: 10px;
   margin: 10px auto;
@@ -116,6 +116,10 @@ nav a{
   transition: .5s;
 }
 
+.active-link{
+color: rgb(146, 123, 86) !important;
+}
+
 /* carousel */
 .carousel-item{
   text-align: center;
@@ -146,6 +150,10 @@ nav a{
   font-size: 2rem;
 }
 
+.bolder{
+  font-weight: 600;
+}
+
   .text-box {
   align-items: center;
   border-radius: 20px;
@@ -162,7 +170,7 @@ nav a{
   color: black;
 }
 
-.img-opt-top{
+.img-opt-top, .img-opt-out{
   display: none;
 }
 
@@ -309,6 +317,10 @@ box-shadow: none;
 
 
 @media (min-width:768px){
+.text-main{
+  font-size: 1.25rem;
+}
+
 .page-headings{
  font-size: 2.75rem;
 }
@@ -367,6 +379,17 @@ box-shadow: none;
   flex-direction: column;
   padding: 2%;
   text-align: justify;
+  width: 100%;
+}
+
+.img-opt-top{
+  display: none;
+}
+
+.img-opt-out{
+  border-radius: 15px;
+  box-shadow: 3px 3px 20px .5px black;
+  display: block;
   width: 100%;
 }
 
