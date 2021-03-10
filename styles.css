@@ -147,7 +147,7 @@ color: rgb(146, 123, 86) !important;
 .main-page-label{
   color: black;
   font-family: var(--sans-serif);
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .bolder{
@@ -181,7 +181,7 @@ color: rgb(146, 123, 86) !important;
 
 .process-cell .main-page-label{
   color: white;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   text-align: center;
 }
 
@@ -329,6 +329,9 @@ box-shadow: none;
   font-size: 3.3vw;
 }
 
+.process-cell, .main-page-label{
+  font-size: 2rem;
+}
 
 .img-opt-top{
   display: block;
