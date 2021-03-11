@@ -3,9 +3,8 @@
 function matchSlideOne() {
     $('.carousel').carousel(0); //resets carousel to first slide
     var slideOne = $('.slide-one');
-    // $(slideOne).css('height', '0');
     $(slideOne).css('width', '100%');
-    $(slideOne).css('height', 'auto');
+    // $(slideOne).css('height', 'auto');
     var slideOneHeight = slideOne.height();
     console.log(slideOneHeight);
     $('.carousel-img').each(function () {
