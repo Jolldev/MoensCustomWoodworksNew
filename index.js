@@ -40,4 +40,8 @@ function windowSize() {
 // }
 window.addEventListener('resize', windowSize);
 window.addEventListener("orientationchange", windowSize);
-document.addEventListener("DOMContentLoaded", windowSize);
+// document.addEventListener("DOMContentLoaded", windowSize);
+
+window.onload = function () {
+    windowSize();
+}
